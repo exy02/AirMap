@@ -1,8 +1,18 @@
+<a href="https://airtable.com/">
+    <img src="https://github.com/eyan02/AirMap/blob/main/images/airtable-icon.svg" alt="Airtable logo" title="AirMap" align="right" height="80" />
+</a>
+
 # AirMap
 <!-- ## Table of Contents
 * [Examples](#examples) -->
 
-AirMap is a data mapper powered by Airtable. Easily keep track of data sources, data columns (and their validations), and how you map your data.
+AirMap is a data mapper powered by Airtable. Easily keep track of data dictionaries, sources, columns (and their validations), and how you map your data.
+
+### Benefits
+* When you update your master data mappings in Airtable, AirMap automatically updates your Python processes to match what you have in the cloud!
+* Airtable centralizes all information about the data you work with, everything you need in one place.
+* No need to send static documents back and forth, easily collaborate with others via Airtables cloud/desktop interfaces.
+* Quickly manage, control, and share your data mappings, validations, and data dictionaries.
 
 Check out the [Airtable base here](https://airtable.com/invite/l?inviteId=invv5f5IxclJ7Vwf4&inviteToken=bcafba33dd092dc86a67450487ab4e32a6a8d434291321777b4e4d369fdff1e9&utm_source=email) to get an idea of how the data information is organized. 
 
