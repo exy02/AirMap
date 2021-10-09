@@ -6,7 +6,7 @@
 <!-- ## Table of Contents
 * [Examples](#examples) -->
 
-AirMap is a data mapper powered by Airtable. Easily keep track of data dictionaries, sources, columns (and their validations), and how you map your data.
+AirMap is a data mapper powered by Airtable. Easily keep track of data dictionaries, mappings, sources, columns, and validations.
 
 ### Benefits
 * Update master data mappings in Airtable, AirMap wil automatically update your Python processes to match what you have in the cloud!
