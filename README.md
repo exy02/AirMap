@@ -172,7 +172,7 @@ airMap.findMappingView("Project A - Client Summary").mapData(data)
 </div>
 <br></br>
 
-### You can use AirMap to check mapping requirements directly in Python:
+### You can use AirMap to check a mapping's requirements directly in Python:
 ```python
 # Check input data sources used for a chosen mapping
 airMap.findMappingView("Project A - Client Summary").viewInputSources()
