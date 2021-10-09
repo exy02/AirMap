@@ -90,12 +90,15 @@ class airtableDataMapper(object):
         self.map_df = map_df.sort_values(by='ColumnPosition')  
         return self
     
-    def inputSources(self):
+    def viewInputSources(self):
         return self.inputSourceNames 
 
-    def inputColumns(self):
+    def viewInputColumns(self):
         inputCols_df = self.map_df[['InputSource','InputColumn','OutputColumn']].copy()
         return inputCols_df
+
+    def viewMap(self):
+        return self.map_df
 
     def mapData(self,data):
         #creates inital source to column dictionary used to pull all column from a source during merging
