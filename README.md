@@ -175,7 +175,7 @@ airMap.findMappingView("Project A - Client Summary").mapData(data)
 ### You can use AirMap to check mapping requirements directly in Python:
 ```python
 # Check input data sources used for a chosen mapping
-airMap.findMappingView("Project A - Client Summary").inputSources()
+airMap.findMappingView("Project A - Client Summary").viewInputSources()
 ```
 <div>
   ['Internal_Import_Format2',
@@ -186,7 +186,7 @@ airMap.findMappingView("Project A - Client Summary").inputSources()
 
 ```python
 # View input data sources used for a chosen mapping
-airMap.findMappingView("Project A - Client Summary").inputColumns()
+airMap.findMappingView("Project A - Client Summary").viewInputColumns()
 ```
 <table border="1">
   <thead>
@@ -240,7 +240,7 @@ airMap.findMappingView("Project A - Client Summary").inputColumns()
 
 ```python
 # View all mapping details for a chosen mapping
-airMap.findMappingView("Project A - Client Summary").map_df
+airMap.findMappingView("Project A - Client Summary").viewMap()
 ```
 <table border="1">
   <thead>
