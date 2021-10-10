@@ -28,7 +28,9 @@ AirMap is a data mapper powered by Airtable. Easily keep track of data dictionar
     
 ## Examples:
  
-### Map data using a data-map from Airtable (e.g. 'Project A - Client Summary', [view the base here](https://airtable.com/shr9Tr2wp5rs2Bm7a))
+### Map data using a data-map from Airtable 
+### (e.g. 'Project A - Client Summary', [view the base here](https://airtable.com/shr9Tr2wp5rs2Bm7a))
+#### Demo Input Data Sources
 <table>
   <tr>  <td>Internal_Import_Format2</td>  <td>Internal_Table_Format1</td>  <td>Internal_Import_Format1</td>  </tr>
   <tr><td>
@@ -134,6 +136,9 @@ AirMap is a data mapper powered by Airtable. Easily keep track of data dictionar
  
  
 ```python
+# Pass the data sources to AirMap and specify the output format you want to create.
+# AirMap will automatically organize and map the data sources into your output format designed in Airtable.
+
 Internal_Import_Format1 = pd.read_csv("Internal_Import_Format1.csv",dtype=str)
 Internal_Import_Format2 = pd.read_csv("Internal_Import_Format2.csv",dtype=str)
 Internal_Table_Format1 = pd.read_csv("Internal_Table_Format1.csv",dtype=str)
@@ -145,6 +150,7 @@ data = {'Internal_Import_Format1' : Internal_Import_Format1,
 airMap = airtableDataMapper(base_key,airAPI_key)
 airMap.findMappingView("Project A - Client Summary").mapData(data)
 ```
+#### Resulting output table
 <div>
 <table border="1">
   <thead>
